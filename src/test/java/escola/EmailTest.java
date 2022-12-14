@@ -15,4 +15,9 @@ class EmailTest {
 		assertThrows(IllegalArgumentException.class, () -> new Email("emailinvalido@"));
 	}
 
+	@Test
+	void devePermitirEmailValidoNaoLancaExcecao() {
+		assertDoesNotThrow(() -> new Email("ticiano.filho@mv.com.br"));
+		assertDoesNotThrow(() -> new Email("ticiano.filho@mv.com"));
+	}
 }
