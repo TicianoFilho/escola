@@ -1,7 +1,7 @@
 // Entidades possuem uma identidade única, enquanto VOs são considerados iguais, se todos os seus 
 //atributos tiverem valores iguais.
 
-package escola;
+package br.com.alura.escola.dominio.aluno;
 
 public class Email {
 
