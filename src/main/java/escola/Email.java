@@ -9,7 +9,7 @@ public class Email {
 	
 	private String endereco;
 
-	protected Email(String endereco) {
+	public Email(String endereco) {
 		if (endereco == null || !endereco.matches("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$")) {
 			throw new IllegalArgumentException("Email inválido!");
 		}
